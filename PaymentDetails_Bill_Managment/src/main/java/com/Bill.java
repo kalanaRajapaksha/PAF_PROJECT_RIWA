@@ -32,8 +32,7 @@ public class Bill {
 	 } 
 	 // Prepare the html table to be displayed
 	 output = "<table border='1'  class=\"table table-striped\"><tr><th>Power Usage</th>" 
-			 +"<th>Amount</th><th>Start Date</th>"
-			 +"<th>End Date</th></tr>"; 
+			 +"<th>Amount</th><th>Start Date</th><th>End Date</th></tr>"; 
 	 String query = "select * from bill"; 
 	 Statement stmt = con.createStatement(); 
 	 ResultSet rs = stmt.executeQuery(query); 
