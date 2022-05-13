@@ -129,7 +129,11 @@ if (!$.isNumeric(secCode))
  { 
  return "Insert a numerical value for securityCode."; 
  } 
- if ($("#securityCode").val().length < 3 && $("#securityCode").val().length > 3) 
+ if ($("#securityCode").val().length >= 4 ) 
+ { 
+ return "security code must have  3 Digits"; 
+ } 
+  if ($("#securityCode").val().length <= 2 ) 
  { 
  return "security code must have  3 Digits"; 
  } 
