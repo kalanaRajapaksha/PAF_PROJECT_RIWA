@@ -78,6 +78,14 @@ if (!$.isNumeric(cNo))
  { 
  return "Insert a numerical value for Card Number."; 
  }
+   if ($("#cardNo").val().length <= 15 ) 
+ { 
+ return "card no must have  16 Digits"; 
+ } 
+    if ($("#cardNo").val().length >= 17 ) 
+ { 
+ return "card no must have  16 Digits"; 
+ } 
 if ($("#expDate").val().trim() == "") 
  { 
  return "Insert Expire Date."; 
